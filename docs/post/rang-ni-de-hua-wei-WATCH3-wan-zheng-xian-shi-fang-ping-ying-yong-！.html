@@ -20,52 +20,83 @@ shizuku 、shizukurunner（建议使用酷安@鱼Salmon 的圆屏适配版： [�
 
 ## 方法1：Shizuku+ShizukuRunner
 1. 打开手表设置，关于，狂点HarmonyOS版本直到跳出toast
- ![toast](https://www.freeimg.cn/i/2024/09/15/66e63761a590f.webp)
+
+`Gmeek-html<img src='https://www.freeimg.cn/i/2024/09/15/66e63761a590f.webp'>`
+
 2. 返回上一级，点击开发人员选项，滑到下面找到hdc调试，开启，再开启通过wlan调试
- ![0](https://www.freeimg.cn/i/2024/09/15/66e63761959b1.webp)
+
+`Gmeek-html<img src='https://www.freeimg.cn/i/2024/09/15/66e63761959b1.webp'>`
+
 如果显示了不可用，那很有可能是你没有把手表连接到wifi
 3. 手表安装Shizuku和ShizukuRunner
 装软件的教程略过，酷安上有
- ![Test](https://www.freeimg.cn/i/2024/09/15/66e63761751f2.webp)
- ![Test](https://www.freeimg.cn/i/2024/09/15/66e637614286d.webp)
+
+`Gmeek-html<img src='https://www.freeimg.cn/i/2024/09/15/66e63761751f2.webp'>`
+`Gmeek-html<img src='https://www.freeimg.cn/i/2024/09/15/66e637614286d.webp'>`
+
 4. 打开Shizuku，点击无线调试下的启动按键，等待Shizuku启动完成
- ![Test](https://www.freeimg.cn/i/2024/09/15/66e637618a87e.webp) 
+
+`Gmeek-html<img src='https://www.freeimg.cn/i/2024/09/15/66e637618a87e.webp'>` 
+
 启动完成后给予ShizukuRunner权限 
- ![Test](https://www.freeimg.cn/i/2024/09/15/66e63761660fe.webp)
+
+`Gmeek-html<img src='https://www.freeimg.cn/i/2024/09/15/66e63761660fe.webp'>`
+
 5. 打开ShizukuRunner，点击加号新建
- ![Test](https://www.freeimg.cn/i/2024/09/15/66e637612b5e4.webp) 
+
+`Gmeek-html<img src='https://www.freeimg.cn/i/2024/09/15/66e637612b5e4.webp'>`
+
 名字随便取一个，然后在命令处输入wm overscan 60,60,60,60 
- ![Test](https://www.freeimg.cn/i/2024/09/15/66e6376161acd.webp) 
+
+`Gmeek-html<img src='https://www.freeimg.cn/i/2024/09/15/66e6376161acd.webp'>`
+
 完成后回到ShizukuRunner的主界面，点击刚刚新添加的 
- ![Test](https://www.freeimg.cn/i/2024/09/15/66e63761544b0.webp) 
+
+`Gmeek-html<img src='https://www.freeimg.cn/i/2024/09/15/66e63761544b0.webp'>`
+
 然后你就能享受方屏游戏了
- ![Test](https://www.freeimg.cn/i/2024/09/15/66e63761a020b.webp) 
+
+`Gmeek-html<img src='https://www.freeimg.cn/i/2024/09/15/66e63761a020b.webp'>`
+
 6. 复原也很简单：再用上面的手法新建一个，命令输入wm overscan reset，再点击右边的箭头就能恢复了
- ![Test](https://www.freeimg.cn/i/2024/09/15/66e6376161acd.webp)
- ![Test](https://www.freeimg.cn/i/2024/09/15/66e6376192470.webp)
+
+`Gmeek-html<img src='https://www.freeimg.cn/i/2024/09/15/66e6376161acd.webp'>`
+`Gmeek-html<img src='https://www.freeimg.cn/i/2024/09/15/66e6376192470.webp'>`
 
 ## 方法二：wearos工具箱
 1. 用前面的手法打开无线调试
 2. 回到主界面，下拉控制中心，点击亮屏
 （这一步的目的是防止手表自动息屏导致adb断连）
- ![Test](https://www.freeimg.cn/i/2024/09/15/66e637614d71d.webp) 
+
+`Gmeek-html<img src='https://www.freeimg.cn/i/2024/09/15/66e637614d71d.webp'>`
+
 打开wearos工具箱，过向导后，在主界面最顶上的输入框输入前面开发者选项wlan调试里的ip地址（带端口），并点击连接按钮 
- ![Test](https://pic.imgdb.cn/item/66e63a82d9c307b7e9fec5c3.jpg)
- ![Test](https://pic.imgdb.cn/item/66e63a82d9c307b7e9fec5d7.jpg) 
+
+`Gmeek-html<img src='https://pic.imgdb.cn/item/66e63a82d9c307b7e9fec5c3.jpg'>`
+`Gmeek-html<img src='https://pic.imgdb.cn/item/66e63a82d9c307b7e9fec5d7.jpg'>`
+
 4. 点击下面的功能，在这个页面点屏幕工具
- ![Test](https://pic.imgdb.cn/item/66e63a82d9c307b7e9fec5fd.jpg) 
+
+`Gmeek-html<img src='https://pic.imgdb.cn/item/66e63a82d9c307b7e9fec5fd.jpg'>`
+
 在overscan值处将水平与垂直都调整为60，并应用 
- ![Test](https://pic.imgdb.cn/item/66e63a8ed9c307b7e9feceb9.jpg)
- ![Test](https://pic.imgdb.cn/item/66e63a81d9c307b7e9fec5a8.jpg) 
+
+`Gmeek-html<img src='https://pic.imgdb.cn/item/66e63a8ed9c307b7e9feceb9.jpg'>`
+`Gmeek-html<img src='https://pic.imgdb.cn/item/66e63a81d9c307b7e9fec5a8.jpg'>`
+
 此时屏幕就能完整显示方形应用了
- ![Test](https://www.freeimg.cn/i/2024/09/15/66e637617ff42.webp) 
+
+`Gmeek-html<img src='https://www.freeimg.cn/i/2024/09/15/66e637617ff42.webp'>`
+
 如果要恢复原来的直接点击恢复即可 
- ![Test](https://pic.imgdb.cn/item/66e63a82d9c307b7e9fec5e4.jpg)
+
+`Gmeek-html<img src='https://pic.imgdb.cn/item/66e63a82d9c307b7e9fec5e4.jpg'>`
 
 ---
 
 完
 <!-- ##{'script':'<script src='https://blog.meekdai.com/Gmeek/plugins/GmeekTOC.js'></script>'}## -->
+
 。">
 <meta property="og:title" content="让你的华为WATCH3完整显示方屏应用！">
 <meta property="og:description" content="首先，你需要的：
@@ -78,52 +109,83 @@ shizuku 、shizukurunner（建议使用酷安@鱼Salmon 的圆屏适配版： [�
 
 ## 方法1：Shizuku+ShizukuRunner
 1. 打开手表设置，关于，狂点HarmonyOS版本直到跳出toast
- ![toast](https://www.freeimg.cn/i/2024/09/15/66e63761a590f.webp)
+
+`Gmeek-html<img src='https://www.freeimg.cn/i/2024/09/15/66e63761a590f.webp'>`
+
 2. 返回上一级，点击开发人员选项，滑到下面找到hdc调试，开启，再开启通过wlan调试
- ![0](https://www.freeimg.cn/i/2024/09/15/66e63761959b1.webp)
+
+`Gmeek-html<img src='https://www.freeimg.cn/i/2024/09/15/66e63761959b1.webp'>`
+
 如果显示了不可用，那很有可能是你没有把手表连接到wifi
 3. 手表安装Shizuku和ShizukuRunner
 装软件的教程略过，酷安上有
- ![Test](https://www.freeimg.cn/i/2024/09/15/66e63761751f2.webp)
- ![Test](https://www.freeimg.cn/i/2024/09/15/66e637614286d.webp)
+
+`Gmeek-html<img src='https://www.freeimg.cn/i/2024/09/15/66e63761751f2.webp'>`
+`Gmeek-html<img src='https://www.freeimg.cn/i/2024/09/15/66e637614286d.webp'>`
+
 4. 打开Shizuku，点击无线调试下的启动按键，等待Shizuku启动完成
- ![Test](https://www.freeimg.cn/i/2024/09/15/66e637618a87e.webp) 
+
+`Gmeek-html<img src='https://www.freeimg.cn/i/2024/09/15/66e637618a87e.webp'>` 
+
 启动完成后给予ShizukuRunner权限 
- ![Test](https://www.freeimg.cn/i/2024/09/15/66e63761660fe.webp)
+
+`Gmeek-html<img src='https://www.freeimg.cn/i/2024/09/15/66e63761660fe.webp'>`
+
 5. 打开ShizukuRunner，点击加号新建
- ![Test](https://www.freeimg.cn/i/2024/09/15/66e637612b5e4.webp) 
+
+`Gmeek-html<img src='https://www.freeimg.cn/i/2024/09/15/66e637612b5e4.webp'>`
+
 名字随便取一个，然后在命令处输入wm overscan 60,60,60,60 
- ![Test](https://www.freeimg.cn/i/2024/09/15/66e6376161acd.webp) 
+
+`Gmeek-html<img src='https://www.freeimg.cn/i/2024/09/15/66e6376161acd.webp'>`
+
 完成后回到ShizukuRunner的主界面，点击刚刚新添加的 
- ![Test](https://www.freeimg.cn/i/2024/09/15/66e63761544b0.webp) 
+
+`Gmeek-html<img src='https://www.freeimg.cn/i/2024/09/15/66e63761544b0.webp'>`
+
 然后你就能享受方屏游戏了
- ![Test](https://www.freeimg.cn/i/2024/09/15/66e63761a020b.webp) 
+
+`Gmeek-html<img src='https://www.freeimg.cn/i/2024/09/15/66e63761a020b.webp'>`
+
 6. 复原也很简单：再用上面的手法新建一个，命令输入wm overscan reset，再点击右边的箭头就能恢复了
- ![Test](https://www.freeimg.cn/i/2024/09/15/66e6376161acd.webp)
- ![Test](https://www.freeimg.cn/i/2024/09/15/66e6376192470.webp)
+
+`Gmeek-html<img src='https://www.freeimg.cn/i/2024/09/15/66e6376161acd.webp'>`
+`Gmeek-html<img src='https://www.freeimg.cn/i/2024/09/15/66e6376192470.webp'>`
 
 ## 方法二：wearos工具箱
 1. 用前面的手法打开无线调试
 2. 回到主界面，下拉控制中心，点击亮屏
 （这一步的目的是防止手表自动息屏导致adb断连）
- ![Test](https://www.freeimg.cn/i/2024/09/15/66e637614d71d.webp) 
+
+`Gmeek-html<img src='https://www.freeimg.cn/i/2024/09/15/66e637614d71d.webp'>`
+
 打开wearos工具箱，过向导后，在主界面最顶上的输入框输入前面开发者选项wlan调试里的ip地址（带端口），并点击连接按钮 
- ![Test](https://pic.imgdb.cn/item/66e63a82d9c307b7e9fec5c3.jpg)
- ![Test](https://pic.imgdb.cn/item/66e63a82d9c307b7e9fec5d7.jpg) 
+
+`Gmeek-html<img src='https://pic.imgdb.cn/item/66e63a82d9c307b7e9fec5c3.jpg'>`
+`Gmeek-html<img src='https://pic.imgdb.cn/item/66e63a82d9c307b7e9fec5d7.jpg'>`
+
 4. 点击下面的功能，在这个页面点屏幕工具
- ![Test](https://pic.imgdb.cn/item/66e63a82d9c307b7e9fec5fd.jpg) 
+
+`Gmeek-html<img src='https://pic.imgdb.cn/item/66e63a82d9c307b7e9fec5fd.jpg'>`
+
 在overscan值处将水平与垂直都调整为60，并应用 
- ![Test](https://pic.imgdb.cn/item/66e63a8ed9c307b7e9feceb9.jpg)
- ![Test](https://pic.imgdb.cn/item/66e63a81d9c307b7e9fec5a8.jpg) 
+
+`Gmeek-html<img src='https://pic.imgdb.cn/item/66e63a8ed9c307b7e9feceb9.jpg'>`
+`Gmeek-html<img src='https://pic.imgdb.cn/item/66e63a81d9c307b7e9fec5a8.jpg'>`
+
 此时屏幕就能完整显示方形应用了
- ![Test](https://www.freeimg.cn/i/2024/09/15/66e637617ff42.webp) 
+
+`Gmeek-html<img src='https://www.freeimg.cn/i/2024/09/15/66e637617ff42.webp'>`
+
 如果要恢复原来的直接点击恢复即可 
- ![Test](https://pic.imgdb.cn/item/66e63a82d9c307b7e9fec5e4.jpg)
+
+`Gmeek-html<img src='https://pic.imgdb.cn/item/66e63a82d9c307b7e9fec5e4.jpg'>`
 
 ---
 
 完
 <!-- ##{'script':'<script src='https://blog.meekdai.com/Gmeek/plugins/GmeekTOC.js'></script>'}## -->
+
 。">
 <meta property="og:type" content="article">
 <meta property="og:url" content="http://blog.mtice.top/post/rang-ni-de-hua-wei-WATCH3-wan-zheng-xian-shi-fang-ping-ying-yong-%EF%BC%81.html">
@@ -193,50 +255,60 @@ shizuku 、shizukurunner（建议使用酷安@鱼Salmon 的圆屏适配版： <a
 <hr>
 <h2>方法1：Shizuku+ShizukuRunner</h2>
 <ol>
-<li>打开手表设置，关于，狂点HarmonyOS版本直到跳出toast<br>
-<a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/9abf326c604a6b22c13f4167300f3565c271b61d6871db3ca0cdcc7f685ee3bf/68747470733a2f2f7777772e66726565696d672e636e2f692f323032342f30392f31352f363665363337363161353930662e77656270"><img src="https://camo.githubusercontent.com/9abf326c604a6b22c13f4167300f3565c271b61d6871db3ca0cdcc7f685ee3bf/68747470733a2f2f7777772e66726565696d672e636e2f692f323032342f30392f31352f363665363337363161353930662e77656270" alt="toast" data-canonical-src="https://www.freeimg.cn/i/2024/09/15/66e63761a590f.webp" style="max-width: 100%;"></a></li>
-<li>返回上一级，点击开发人员选项，滑到下面找到hdc调试，开启，再开启通过wlan调试<br>
-<a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/2cfdd4ad4ad9345df959877df0ab63aed85bfbec639503688f27a5a501ead41a/68747470733a2f2f7777772e66726565696d672e636e2f692f323032342f30392f31352f363665363337363139353962312e77656270"><img src="https://camo.githubusercontent.com/2cfdd4ad4ad9345df959877df0ab63aed85bfbec639503688f27a5a501ead41a/68747470733a2f2f7777772e66726565696d672e636e2f692f323032342f30392f31352f363665363337363139353962312e77656270" alt="0" data-canonical-src="https://www.freeimg.cn/i/2024/09/15/66e63761959b1.webp" style="max-width: 100%;"></a><br>
-如果显示了不可用，那很有可能是你没有把手表连接到wifi</li>
-<li>手表安装Shizuku和ShizukuRunner<br>
-装软件的教程略过，酷安上有<br>
-<a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/c7eed3fef68d212df77ca52eccd0dc966dc58e1d9553155d53f196815d533683/68747470733a2f2f7777772e66726565696d672e636e2f692f323032342f30392f31352f363665363337363137353166322e77656270"><img src="https://camo.githubusercontent.com/c7eed3fef68d212df77ca52eccd0dc966dc58e1d9553155d53f196815d533683/68747470733a2f2f7777772e66726565696d672e636e2f692f323032342f30392f31352f363665363337363137353166322e77656270" alt="Test" data-canonical-src="https://www.freeimg.cn/i/2024/09/15/66e63761751f2.webp" style="max-width: 100%;"></a><br>
-<a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/873e4233a79bd32845ddfab7fc18af8b0ae965f9a695203ddcf204a215f02287/68747470733a2f2f7777772e66726565696d672e636e2f692f323032342f30392f31352f363665363337363134323836642e77656270"><img src="https://camo.githubusercontent.com/873e4233a79bd32845ddfab7fc18af8b0ae965f9a695203ddcf204a215f02287/68747470733a2f2f7777772e66726565696d672e636e2f692f323032342f30392f31352f363665363337363134323836642e77656270" alt="Test" data-canonical-src="https://www.freeimg.cn/i/2024/09/15/66e637614286d.webp" style="max-width: 100%;"></a></li>
-<li>打开Shizuku，点击无线调试下的启动按键，等待Shizuku启动完成<br>
-<a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/18f044afba9d87d4172011e36d7b8321b28d70e18a5071ca9deff3f05d4c35ea/68747470733a2f2f7777772e66726565696d672e636e2f692f323032342f30392f31352f363665363337363138613837652e77656270"><img src="https://camo.githubusercontent.com/18f044afba9d87d4172011e36d7b8321b28d70e18a5071ca9deff3f05d4c35ea/68747470733a2f2f7777772e66726565696d672e636e2f692f323032342f30392f31352f363665363337363138613837652e77656270" alt="Test" data-canonical-src="https://www.freeimg.cn/i/2024/09/15/66e637618a87e.webp" style="max-width: 100%;"></a><br>
-启动完成后给予ShizukuRunner权限<br>
-<a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/7204a1ad9387aade6797eb8ca70643ffe7ebf066aa696dda1089da8d73589ebe/68747470733a2f2f7777772e66726565696d672e636e2f692f323032342f30392f31352f363665363337363136363066652e77656270"><img src="https://camo.githubusercontent.com/7204a1ad9387aade6797eb8ca70643ffe7ebf066aa696dda1089da8d73589ebe/68747470733a2f2f7777772e66726565696d672e636e2f692f323032342f30392f31352f363665363337363136363066652e77656270" alt="Test" data-canonical-src="https://www.freeimg.cn/i/2024/09/15/66e63761660fe.webp" style="max-width: 100%;"></a></li>
-<li>打开ShizukuRunner，点击加号新建<br>
-<a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/75f4fd432d0898478d5ef9bd621615888e8259d4a447baa8b415aaf737069ef3/68747470733a2f2f7777772e66726565696d672e636e2f692f323032342f30392f31352f363665363337363132623565342e77656270"><img src="https://camo.githubusercontent.com/75f4fd432d0898478d5ef9bd621615888e8259d4a447baa8b415aaf737069ef3/68747470733a2f2f7777772e66726565696d672e636e2f692f323032342f30392f31352f363665363337363132623565342e77656270" alt="Test" data-canonical-src="https://www.freeimg.cn/i/2024/09/15/66e637612b5e4.webp" style="max-width: 100%;"></a><br>
-名字随便取一个，然后在命令处输入wm overscan 60,60,60,60<br>
-<a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/d0005a045e5859796df60d5b7324a00f16b91cb7dd16f52a6e161e92ff35e73d/68747470733a2f2f7777772e66726565696d672e636e2f692f323032342f30392f31352f363665363337363136316163642e77656270"><img src="https://camo.githubusercontent.com/d0005a045e5859796df60d5b7324a00f16b91cb7dd16f52a6e161e92ff35e73d/68747470733a2f2f7777772e66726565696d672e636e2f692f323032342f30392f31352f363665363337363136316163642e77656270" alt="Test" data-canonical-src="https://www.freeimg.cn/i/2024/09/15/66e6376161acd.webp" style="max-width: 100%;"></a><br>
-完成后回到ShizukuRunner的主界面，点击刚刚新添加的<br>
-<a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/70d223e9dc1d44e5279f51c808617a55f1cee1250530696eedec6aa4edac55e8/68747470733a2f2f7777772e66726565696d672e636e2f692f323032342f30392f31352f363665363337363135343462302e77656270"><img src="https://camo.githubusercontent.com/70d223e9dc1d44e5279f51c808617a55f1cee1250530696eedec6aa4edac55e8/68747470733a2f2f7777772e66726565696d672e636e2f692f323032342f30392f31352f363665363337363135343462302e77656270" alt="Test" data-canonical-src="https://www.freeimg.cn/i/2024/09/15/66e63761544b0.webp" style="max-width: 100%;"></a><br>
-然后你就能享受方屏游戏了<br>
-<a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/0826057762a83e202b227fd7f8990b9c71dff4e1d428f1a50dda29dcd8bb563e/68747470733a2f2f7777772e66726565696d672e636e2f692f323032342f30392f31352f363665363337363161303230622e77656270"><img src="https://camo.githubusercontent.com/0826057762a83e202b227fd7f8990b9c71dff4e1d428f1a50dda29dcd8bb563e/68747470733a2f2f7777772e66726565696d672e636e2f692f323032342f30392f31352f363665363337363161303230622e77656270" alt="Test" data-canonical-src="https://www.freeimg.cn/i/2024/09/15/66e63761a020b.webp" style="max-width: 100%;"></a></li>
-<li>复原也很简单：再用上面的手法新建一个，命令输入wm overscan reset，再点击右边的箭头就能恢复了<br>
-<a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/d0005a045e5859796df60d5b7324a00f16b91cb7dd16f52a6e161e92ff35e73d/68747470733a2f2f7777772e66726565696d672e636e2f692f323032342f30392f31352f363665363337363136316163642e77656270"><img src="https://camo.githubusercontent.com/d0005a045e5859796df60d5b7324a00f16b91cb7dd16f52a6e161e92ff35e73d/68747470733a2f2f7777772e66726565696d672e636e2f692f323032342f30392f31352f363665363337363136316163642e77656270" alt="Test" data-canonical-src="https://www.freeimg.cn/i/2024/09/15/66e6376161acd.webp" style="max-width: 100%;"></a><br>
-<a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/3b03f839d4b9437f612953f35496bc752822c32edc4b0db7f07956783ada1d11/68747470733a2f2f7777772e66726565696d672e636e2f692f323032342f30392f31352f363665363337363139323437302e77656270"><img src="https://camo.githubusercontent.com/3b03f839d4b9437f612953f35496bc752822c32edc4b0db7f07956783ada1d11/68747470733a2f2f7777772e66726565696d672e636e2f692f323032342f30392f31352f363665363337363139323437302e77656270" alt="Test" data-canonical-src="https://www.freeimg.cn/i/2024/09/15/66e6376192470.webp" style="max-width: 100%;"></a></li>
+<li>打开手表设置，关于，狂点HarmonyOS版本直到跳出toast</li>
 </ol>
+<p><img src="https://www.freeimg.cn/i/2024/09/15/66e63761a590f.webp"></p>
+<ol start="2">
+<li>返回上一级，点击开发人员选项，滑到下面找到hdc调试，开启，再开启通过wlan调试</li>
+</ol>
+<p><img src="https://www.freeimg.cn/i/2024/09/15/66e63761959b1.webp"></p>
+<p>如果显示了不可用，那很有可能是你没有把手表连接到wifi<br>
+3. 手表安装Shizuku和ShizukuRunner<br>
+装软件的教程略过，酷安上有</p>
+<p><img src="https://www.freeimg.cn/i/2024/09/15/66e63761751f2.webp"><br>
+<img src="https://www.freeimg.cn/i/2024/09/15/66e637614286d.webp"></p>
+<ol start="4">
+<li>打开Shizuku，点击无线调试下的启动按键，等待Shizuku启动完成</li>
+</ol>
+<p><img src="https://www.freeimg.cn/i/2024/09/15/66e637618a87e.webp"></p>
+<p>启动完成后给予ShizukuRunner权限</p>
+<p><img src="https://www.freeimg.cn/i/2024/09/15/66e63761660fe.webp"></p>
+<ol start="5">
+<li>打开ShizukuRunner，点击加号新建</li>
+</ol>
+<p><img src="https://www.freeimg.cn/i/2024/09/15/66e637612b5e4.webp"></p>
+<p>名字随便取一个，然后在命令处输入wm overscan 60,60,60,60</p>
+<p><img src="https://www.freeimg.cn/i/2024/09/15/66e6376161acd.webp"></p>
+<p>完成后回到ShizukuRunner的主界面，点击刚刚新添加的</p>
+<p><img src="https://www.freeimg.cn/i/2024/09/15/66e63761544b0.webp"></p>
+<p>然后你就能享受方屏游戏了</p>
+<p><img src="https://www.freeimg.cn/i/2024/09/15/66e63761a020b.webp"></p>
+<ol start="6">
+<li>复原也很简单：再用上面的手法新建一个，命令输入wm overscan reset，再点击右边的箭头就能恢复了</li>
+</ol>
+<p><img src="https://www.freeimg.cn/i/2024/09/15/66e6376161acd.webp"><br>
+<img src="https://www.freeimg.cn/i/2024/09/15/66e6376192470.webp"></p>
 <h2>方法二：wearos工具箱</h2>
 <ol>
 <li>用前面的手法打开无线调试</li>
 <li>回到主界面，下拉控制中心，点击亮屏<br>
-（这一步的目的是防止手表自动息屏导致adb断连）<br>
-<a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/d9c5cc0f11ee4886e2a208a71fe9d60e295be915268d8ab55747e2869caf3fe3/68747470733a2f2f7777772e66726565696d672e636e2f692f323032342f30392f31352f363665363337363134643731642e77656270"><img src="https://camo.githubusercontent.com/d9c5cc0f11ee4886e2a208a71fe9d60e295be915268d8ab55747e2869caf3fe3/68747470733a2f2f7777772e66726565696d672e636e2f692f323032342f30392f31352f363665363337363134643731642e77656270" alt="Test" data-canonical-src="https://www.freeimg.cn/i/2024/09/15/66e637614d71d.webp" style="max-width: 100%;"></a><br>
-打开wearos工具箱，过向导后，在主界面最顶上的输入框输入前面开发者选项wlan调试里的ip地址（带端口），并点击连接按钮<br>
-<a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/bd0a46bd8938a750a0b33c8768e3e9414bc32685b73519eda17014c04ba78653/68747470733a2f2f7069632e696d6764622e636e2f6974656d2f3636653633613832643963333037623765396665633563332e6a7067"><img src="https://camo.githubusercontent.com/bd0a46bd8938a750a0b33c8768e3e9414bc32685b73519eda17014c04ba78653/68747470733a2f2f7069632e696d6764622e636e2f6974656d2f3636653633613832643963333037623765396665633563332e6a7067" alt="Test" data-canonical-src="https://pic.imgdb.cn/item/66e63a82d9c307b7e9fec5c3.jpg" style="max-width: 100%;"></a><br>
-<a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/9c931987954c16d8e78176958cc97840c26975a500884b890977bacb016b78bc/68747470733a2f2f7069632e696d6764622e636e2f6974656d2f3636653633613832643963333037623765396665633564372e6a7067"><img src="https://camo.githubusercontent.com/9c931987954c16d8e78176958cc97840c26975a500884b890977bacb016b78bc/68747470733a2f2f7069632e696d6764622e636e2f6974656d2f3636653633613832643963333037623765396665633564372e6a7067" alt="Test" data-canonical-src="https://pic.imgdb.cn/item/66e63a82d9c307b7e9fec5d7.jpg" style="max-width: 100%;"></a></li>
-<li>点击下面的功能，在这个页面点屏幕工具<br>
-<a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/b80e6eb70b26c5f37e331e1fd2586408d31c1a843c0fe88b22848d0a91d9320f/68747470733a2f2f7069632e696d6764622e636e2f6974656d2f3636653633613832643963333037623765396665633566642e6a7067"><img src="https://camo.githubusercontent.com/b80e6eb70b26c5f37e331e1fd2586408d31c1a843c0fe88b22848d0a91d9320f/68747470733a2f2f7069632e696d6764622e636e2f6974656d2f3636653633613832643963333037623765396665633566642e6a7067" alt="Test" data-canonical-src="https://pic.imgdb.cn/item/66e63a82d9c307b7e9fec5fd.jpg" style="max-width: 100%;"></a><br>
-在overscan值处将水平与垂直都调整为60，并应用<br>
-<a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/ca70aa1e670579edeac7585803fab1f864dda336be5bfe56640a3cbfa82a30c9/68747470733a2f2f7069632e696d6764622e636e2f6974656d2f3636653633613865643963333037623765396665636562392e6a7067"><img src="https://camo.githubusercontent.com/ca70aa1e670579edeac7585803fab1f864dda336be5bfe56640a3cbfa82a30c9/68747470733a2f2f7069632e696d6764622e636e2f6974656d2f3636653633613865643963333037623765396665636562392e6a7067" alt="Test" data-canonical-src="https://pic.imgdb.cn/item/66e63a8ed9c307b7e9feceb9.jpg" style="max-width: 100%;"></a><br>
-<a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/58eba206b0f5ff4001f72da8dbe6603e26530b82b8857756229177a816a80dbb/68747470733a2f2f7069632e696d6764622e636e2f6974656d2f3636653633613831643963333037623765396665633561382e6a7067"><img src="https://camo.githubusercontent.com/58eba206b0f5ff4001f72da8dbe6603e26530b82b8857756229177a816a80dbb/68747470733a2f2f7069632e696d6764622e636e2f6974656d2f3636653633613831643963333037623765396665633561382e6a7067" alt="Test" data-canonical-src="https://pic.imgdb.cn/item/66e63a81d9c307b7e9fec5a8.jpg" style="max-width: 100%;"></a><br>
-此时屏幕就能完整显示方形应用了<br>
-<a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/cb6c32daf0e66419b68498d84a166f757ca37bf0a917de0d5290957795eae0d7/68747470733a2f2f7777772e66726565696d672e636e2f692f323032342f30392f31352f363665363337363137666634322e77656270"><img src="https://camo.githubusercontent.com/cb6c32daf0e66419b68498d84a166f757ca37bf0a917de0d5290957795eae0d7/68747470733a2f2f7777772e66726565696d672e636e2f692f323032342f30392f31352f363665363337363137666634322e77656270" alt="Test" data-canonical-src="https://www.freeimg.cn/i/2024/09/15/66e637617ff42.webp" style="max-width: 100%;"></a><br>
-如果要恢复原来的直接点击恢复即可<br>
-<a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/b053c5414d72498ef88237ac2c79d7dac7891972c3f693b82af72f12fa2a0526/68747470733a2f2f7069632e696d6764622e636e2f6974656d2f3636653633613832643963333037623765396665633565342e6a7067"><img src="https://camo.githubusercontent.com/b053c5414d72498ef88237ac2c79d7dac7891972c3f693b82af72f12fa2a0526/68747470733a2f2f7069632e696d6764622e636e2f6974656d2f3636653633613832643963333037623765396665633565342e6a7067" alt="Test" data-canonical-src="https://pic.imgdb.cn/item/66e63a82d9c307b7e9fec5e4.jpg" style="max-width: 100%;"></a></li>
+（这一步的目的是防止手表自动息屏导致adb断连）</li>
 </ol>
+<p><img src="https://www.freeimg.cn/i/2024/09/15/66e637614d71d.webp"></p>
+<p>打开wearos工具箱，过向导后，在主界面最顶上的输入框输入前面开发者选项wlan调试里的ip地址（带端口），并点击连接按钮</p>
+<p><img src="https://pic.imgdb.cn/item/66e63a82d9c307b7e9fec5c3.jpg"><br>
+<img src="https://pic.imgdb.cn/item/66e63a82d9c307b7e9fec5d7.jpg"></p>
+<ol start="4">
+<li>点击下面的功能，在这个页面点屏幕工具</li>
+</ol>
+<p><img src="https://pic.imgdb.cn/item/66e63a82d9c307b7e9fec5fd.jpg"></p>
+<p>在overscan值处将水平与垂直都调整为60，并应用</p>
+<p><img src="https://pic.imgdb.cn/item/66e63a8ed9c307b7e9feceb9.jpg"><br>
+<img src="https://pic.imgdb.cn/item/66e63a81d9c307b7e9fec5a8.jpg"></p>
+<p>此时屏幕就能完整显示方形应用了</p>
+<p><img src="https://www.freeimg.cn/i/2024/09/15/66e637617ff42.webp"></p>
+<p>如果要恢复原来的直接点击恢复即可</p>
+<p><img src="https://pic.imgdb.cn/item/66e63a82d9c307b7e9fec5e4.jpg"></p>
 <hr>
 <p>完</p>
 </div>
