@@ -37,3 +37,4 @@ pip install pythondialog
 ## 下载
 项目地址:  [github.com/AMDISYES/pyos_core](https://github.com/AMDISYES/pyos_core) 
 下载地址:  [github.com/AMDISYES/pyos_core/releases/latest](https://github.com/AMDISYES/pyos_core/releases/latest) 
+<!-- ##{"script":"<script src='https://blog.meekdai.com/Gmeek/plugins/GmeekTOC.js'></script>"}## -->
