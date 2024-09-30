@@ -1,3 +1,7 @@
+> [!TIP]
+> 安卓11之后overscan被砍，因此基于安卓12的华为WATCH4不支持本教程
+华为GT系列基于LiteOS的鸿蒙OS，不支持本教程
+
 首先，你需要的：
 一块华为watch3/3pro
 shizuku 、shizukurunner（建议使用酷安@鱼Salmon 的圆屏适配版： [查看链接](https://www.coolapk.com/feed/49937487?shareKey=MjNiZTA2ODRmOGVkNjZlNjM2YTE~&shareUid=4135467&shareFrom=com.coolapk.market_14.1.3-beta2) ）
