@@ -32,7 +32,7 @@ pip install pythondialog
 2.输入`python pyos.py`来启动 PyOS
 
 ## 视频演示
-`Gmeek-html<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=1604800941&bvid=BV1acsFezEKj&cid=1557311907&p=1&autoplay=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width="100%" height="460px"></iframe>`
+`Gmeek-html<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=113017568102035&bvid=BV1acsFezEKj&cid=500001660999280&p=1&autoplay=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width="100%" height="460px"></iframe>`
 
 ## 下载
 项目地址:  [github.com/AMDISYES/pyos_core](https://github.com/AMDISYES/pyos_core) 
