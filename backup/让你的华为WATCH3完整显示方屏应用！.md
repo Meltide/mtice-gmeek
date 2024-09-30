@@ -51,7 +51,7 @@ shizuku 、shizukurunner（建议使用酷安@鱼Salmon 的圆屏适配版： [�
 `Gmeek-html<img src="https://www.freeimg.cn/i/2024/09/15/66e6376161acd.webp">`
 `Gmeek-html<img src="https://www.freeimg.cn/i/2024/09/15/66e6376192470.webp">`
 
-## 方法二：wearos工具箱
+## 方法2：wearos工具箱
 1. 用前面的手法打开无线调试
 2. 回到主界面，下拉控制中心，点击亮屏
 （这一步的目的是防止手表自动息屏导致adb断连）
