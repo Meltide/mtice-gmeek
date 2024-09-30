@@ -15,11 +15,16 @@
 
 ## 界面图
 总览:
- ![总览](https://www.freeimg.cn/i/2024/09/14/66e59d203e97d.webp) 
+
+ `Gmeek-html<img src="https://www.freeimg.cn/i/2024/09/14/66e59d203e97d.webp">`
+
 炫酷的关机界面:
- ![炫酷的关机界面](https://www.freeimg.cn/i/2024/09/14/66e59cc76474e.webp) 
+
+ `Gmeek-html<img src="https://www.freeimg.cn/i/2024/09/14/66e59cc76474e.webp">`
+
 帮助界面:
- ![帮助界面](https://www.freeimg.cn/i/2024/09/14/66e59ed4d2266.webp) 
+
+ `Gmeek-html<img src="https://www.freeimg.cn/i/2024/09/14/66e59ed4d2266.webp">`
 
 ## 使用方法:
 0.确保你安装了Python3
