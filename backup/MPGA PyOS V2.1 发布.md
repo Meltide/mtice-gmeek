@@ -24,7 +24,7 @@
 
  `Gmeek-html<img src="https://www.freeimg.cn/i/2024/09/14/66e59ed4d2266.webp">`
 
-## 使用方法:
+## 使用方法
 0.确保你安装了Python3
 1.输入以下命令安装依赖
 ```
