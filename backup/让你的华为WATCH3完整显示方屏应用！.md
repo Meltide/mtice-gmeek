@@ -8,7 +8,6 @@ shizuku 、shizukurunner（建议使用酷安@鱼Salmon 的圆屏适配版： [�
 或wearos工具箱  [查看链接](https://www.123pan.com/s/HBU0Vv-gPQpH.html) 
 好了，不多bb，直接开始正题
 
----
 
 ## 方法1：Shizuku+ShizukuRunner
 1. 打开手表设置，关于，狂点HarmonyOS版本直到跳出toast
