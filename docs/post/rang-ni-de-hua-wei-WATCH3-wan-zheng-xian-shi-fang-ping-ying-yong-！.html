@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html data-color-mode="light" data-dark-theme="dark" data-light-theme="light" lang="zh-CN">
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href='https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/Primer/21.0.7/primer.css' rel='stylesheet' />
+    <script src='https://blog.meekdai.com/Gmeek/plugins/lightbox.js'></script><script src='https://blog.meekdai.com/Gmeek/plugins/GmeekBSZ.js'></script><script src='https://blog.meekdai.com/Gmeek/plugins/GmeekVercount.js'></script>
+    <link rel="icon" href="https://q.qlogo.cn/headimg_dl?dst_uin=3480656548&spec=640&img_type=jpg"><script>
+        let theme = localStorage.getItem("meek_theme") || "light";
+        document.documentElement.setAttribute("data-color-mode", theme);
+    </script>
+<meta name="description" content="首先，你需要的：
+一块华为watch3/3pro
+shizuku 、shizukurunner（建议使用酷安@鱼Salmon 的圆屏适配版： [查看链接](https://www.coolapk.com/feed/49937487?shareKey=MjNiZTA2ODRmOGVkNjZlNjM2YTE~&shareUid=4135467&shareFrom=com.coolapk.market_14.1.3-beta2) ）
+或wearos工具箱  [查看链接](https://www.123pan.com/s/HBU0Vv-gPQpH.html) 
+好了，不多bb，直接开始正题
+
+---
+
+## 方法1：Shizuku+ShizukuRunner
+1. 打开手表设置，关于，狂点HarmonyOS版本直到跳出toast
+ ![toast](https://www.freeimg.cn/i/2024/09/15/66e63761a590f.webp)
+2. 返回上一级，点击开发人员选项，滑到下面找到hdc调试，开启，再开启通过wlan调试
+ ![0](https://www.freeimg.cn/i/2024/09/15/66e63761959b1.webp)
+如果显示了不可用，那很有可能是你没有把手表连接到wifi
+3. 手表安装Shizuku和ShizukuRunner
+装软件的教程略过，酷安上有
+ ![Test](https://www.freeimg.cn/i/2024/09/15/66e63761751f2.webp)
+ ![Test](https://www.freeimg.cn/i/2024/09/15/66e637614286d.webp)
+4. 打开Shizuku，点击无线调试下的启动按键，等待Shizuku启动完成
+ ![Test](https://www.freeimg.cn/i/2024/09/15/66e637618a87e.webp) 
+启动完成后给予ShizukuRunner权限 
+ ![Test](https://www.freeimg.cn/i/2024/09/15/66e63761660fe.webp)
+5. 打开ShizukuRunner，点击加号新建
+ ![Test](https://www.freeimg.cn/i/2024/09/15/66e637612b5e4.webp) 
+名字随便取一个，然后在命令处输入wm overscan 60,60,60,60 
+ ![Test](https://www.freeimg.cn/i/2024/09/15/66e6376161acd.webp) 
+完成后回到ShizukuRunner的主界面，点击刚刚新添加的 
+ ![Test](https://www.freeimg.cn/i/2024/09/15/66e63761544b0.webp) 
+然后你就能享受方屏游戏了
+ ![Test](https://www.freeimg.cn/i/2024/09/15/66e63761a020b.webp) 
+6. 复原也很简单：再用上面的手法新建一个，命令输入wm overscan reset，再点击右边的箭头就能恢复了
+ ![Test](https://www.freeimg.cn/i/2024/09/15/66e6376161acd.webp)
+ ![Test](https://www.freeimg.cn/i/2024/09/15/66e6376192470.webp)
+
+## 方法二：wearos工具箱
+1. 用前面的手法打开无线调试
+2. 回到主界面，下拉控制中心，点击亮屏
+（这一步的目的是防止手表自动息屏导致adb断连）
+ ![Test](https://www.freeimg.cn/i/2024/09/15/66e637614d71d.webp) 
+打开wearos工具箱，过向导后，在主界面最顶上的输入框输入前面开发者选项wlan调试里的ip地址（带端口），并点击连接按钮 
+ ![Test](https://pic.imgdb.cn/item/66e63a82d9c307b7e9fec5c3.jpg)
+ ![Test](https://pic.imgdb.cn/item/66e63a82d9c307b7e9fec5d7.jpg) 
+4. 点击下面的功能，在这个页面点屏幕工具
+ ![Test](https://pic.imgdb.cn/item/66e63a82d9c307b7e9fec5fd.jpg) 
+在overscan值处将水平与垂直都调整为60，并应用 
+ ![Test](https://pic.imgdb.cn/item/66e63a8ed9c307b7e9feceb9.jpg)
+ ![Test](https://pic.imgdb.cn/item/66e63a81d9c307b7e9fec5a8.jpg) 
+此时屏幕就能完整显示方形应用了
+ ![Test](https://www.freeimg.cn/i/2024/09/15/66e637617ff42.webp) 
+如果要恢复原来的直接点击恢复即可 
+ ![Test](https://pic.imgdb.cn/item/66e63a82d9c307b7e9fec5e4.jpg)
+
+---
+
+完。">
+<meta property="og:title" content="让你的华为WATCH3完整显示方屏应用！">
+<meta property="og:description" content="首先，你需要的：
+一块华为watch3/3pro
+shizuku 、shizukurunner（建议使用酷安@鱼Salmon 的圆屏适配版： [查看链接](https://www.coolapk.com/feed/49937487?shareKey=MjNiZTA2ODRmOGVkNjZlNjM2YTE~&shareUid=4135467&shareFrom=com.coolapk.market_14.1.3-beta2) ）
+或wearos工具箱  [查看链接](https://www.123pan.com/s/HBU0Vv-gPQpH.html) 
+好了，不多bb，直接开始正题
+
+---
+
+## 方法1：Shizuku+ShizukuRunner
+1. 打开手表设置，关于，狂点HarmonyOS版本直到跳出toast
+ ![toast](https://www.freeimg.cn/i/2024/09/15/66e63761a590f.webp)
+2. 返回上一级，点击开发人员选项，滑到下面找到hdc调试，开启，再开启通过wlan调试
+ ![0](https://www.freeimg.cn/i/2024/09/15/66e63761959b1.webp)
+如果显示了不可用，那很有可能是你没有把手表连接到wifi
+3. 手表安装Shizuku和ShizukuRunner
+装软件的教程略过，酷安上有
+ ![Test](https://www.freeimg.cn/i/2024/09/15/66e63761751f2.webp)
+ ![Test](https://www.freeimg.cn/i/2024/09/15/66e637614286d.webp)
+4. 打开Shizuku，点击无线调试下的启动按键，等待Shizuku启动完成
+ ![Test](https://www.freeimg.cn/i/2024/09/15/66e637618a87e.webp) 
+启动完成后给予ShizukuRunner权限 
+ ![Test](https://www.freeimg.cn/i/2024/09/15/66e63761660fe.webp)
+5. 打开ShizukuRunner，点击加号新建
+ ![Test](https://www.freeimg.cn/i/2024/09/15/66e637612b5e4.webp) 
+名字随便取一个，然后在命令处输入wm overscan 60,60,60,60 
+ ![Test](https://www.freeimg.cn/i/2024/09/15/66e6376161acd.webp) 
+完成后回到ShizukuRunner的主界面，点击刚刚新添加的 
+ ![Test](https://www.freeimg.cn/i/2024/09/15/66e63761544b0.webp) 
+然后你就能享受方屏游戏了
+ ![Test](https://www.freeimg.cn/i/2024/09/15/66e63761a020b.webp) 
+6. 复原也很简单：再用上面的手法新建一个，命令输入wm overscan reset，再点击右边的箭头就能恢复了
+ ![Test](https://www.freeimg.cn/i/2024/09/15/66e6376161acd.webp)
+ ![Test](https://www.freeimg.cn/i/2024/09/15/66e6376192470.webp)
+
+## 方法二：wearos工具箱
+1. 用前面的手法打开无线调试
+2. 回到主界面，下拉控制中心，点击亮屏
+（这一步的目的是防止手表自动息屏导致adb断连）
+ ![Test](https://www.freeimg.cn/i/2024/09/15/66e637614d71d.webp) 
+打开wearos工具箱，过向导后，在主界面最顶上的输入框输入前面开发者选项wlan调试里的ip地址（带端口），并点击连接按钮 
+ ![Test](https://pic.imgdb.cn/item/66e63a82d9c307b7e9fec5c3.jpg)
+ ![Test](https://pic.imgdb.cn/item/66e63a82d9c307b7e9fec5d7.jpg) 
+4. 点击下面的功能，在这个页面点屏幕工具
+ ![Test](https://pic.imgdb.cn/item/66e63a82d9c307b7e9fec5fd.jpg) 
+在overscan值处将水平与垂直都调整为60，并应用 
+ ![Test](https://pic.imgdb.cn/item/66e63a8ed9c307b7e9feceb9.jpg)
+ ![Test](https://pic.imgdb.cn/item/66e63a81d9c307b7e9fec5a8.jpg) 
+此时屏幕就能完整显示方形应用了
+ ![Test](https://www.freeimg.cn/i/2024/09/15/66e637617ff42.webp) 
+如果要恢复原来的直接点击恢复即可 
+ ![Test](https://pic.imgdb.cn/item/66e63a82d9c307b7e9fec5e4.jpg)
+
+---
+
+完。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://blog.mtice.top/post/rang-ni-de-hua-wei-WATCH3-wan-zheng-xian-shi-fang-ping-ying-yong-%EF%BC%81.html">
+<meta property="og:image" content="https://q.qlogo.cn/headimg_dl?dst_uin=3480656548&spec=640&img_type=jpg">
+<title>让你的华为WATCH3完整显示方屏应用！</title>
+
+
+
+</head>
+<style>
+body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;padding: 45px;font-size: 16px;font-family: sans-serif;line-height: 1.25;}
+#header{display:flex;padding-bottom:8px;border-bottom: 1px solid var(--borderColor-muted, var(--color-border-muted));margin-bottom: 16px;}
+#footer {margin-top:64px; text-align: center;font-size: small;}
+
+</style>
+
+<style>
+.postTitle{margin: auto 0;font-size:40px;font-weight:bold;}
+.title-right{display:flex;margin:auto 0 0 auto;}
+.title-right .circle{padding: 14px 16px;margin-right:8px;}
+#postBody{border-bottom: 1px solid var(--color-border-default);padding-bottom:36px;}
+#postBody hr{height:2px;}
+#cmButton{height:48px;margin-top:48px;}
+#comments{margin-top:64px;}
+.g-emoji{font-size:24px;}
+@media (max-width: 600px) {
+    body {padding: 8px;}
+    .postTitle{font-size:24px;}
+}
+
+</style>
+
+
+
+
+<body>
+    <div id="header">
+<h1 class="postTitle">让你的华为WATCH3完整显示方屏应用！</h1>
+<div class="title-right">
+    <a href="http://blog.mtice.top" id="buttonHome" class="btn btn-invisible circle" title="首页">
+        <svg class="octicon" width="16" height="16">
+            <path id="pathHome" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+    
+    <a href="https://github.com/MeltIce2024/meltice2024.github.io/issues/4" target="_blank" class="btn btn-invisible circle" title="Issue">
+        <svg class="octicon" width="16" height="16">
+            <path id="pathIssue" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+    
+
+    <a class="btn btn-invisible circle" onclick="modeSwitch();" title="切换主题">
+        <svg class="octicon" width="16" height="16" >
+            <path id="themeSwitch" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+
+</div>
+</div>
+    <div id="content">
+<div class="markdown-body" id="postBody"><p>首先，你需要的：<br>
+一块华为watch3/3pro<br>
+shizuku 、shizukurunner（建议使用酷安@鱼Salmon 的圆屏适配版： <a href="https://www.coolapk.com/feed/49937487?shareKey=MjNiZTA2ODRmOGVkNjZlNjM2YTE~&amp;shareUid=4135467&amp;shareFrom=com.coolapk.market_14.1.3-beta2" rel="nofollow">查看链接</a> ）<br>
+或wearos工具箱  <a href="https://www.123pan.com/s/HBU0Vv-gPQpH.html" rel="nofollow">查看链接</a><br>
+好了，不多bb，直接开始正题</p>
+<hr>
+<h2>方法1：Shizuku+ShizukuRunner</h2>
+<ol>
+<li>打开手表设置，关于，狂点HarmonyOS版本直到跳出toast<br>
+<a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/9abf326c604a6b22c13f4167300f3565c271b61d6871db3ca0cdcc7f685ee3bf/68747470733a2f2f7777772e66726565696d672e636e2f692f323032342f30392f31352f363665363337363161353930662e77656270"><img src="https://camo.githubusercontent.com/9abf326c604a6b22c13f4167300f3565c271b61d6871db3ca0cdcc7f685ee3bf/68747470733a2f2f7777772e66726565696d672e636e2f692f323032342f30392f31352f363665363337363161353930662e77656270" alt="toast" data-canonical-src="https://www.freeimg.cn/i/2024/09/15/66e63761a590f.webp" style="max-width: 100%;"></a></li>
+<li>返回上一级，点击开发人员选项，滑到下面找到hdc调试，开启，再开启通过wlan调试<br>
+<a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/2cfdd4ad4ad9345df959877df0ab63aed85bfbec639503688f27a5a501ead41a/68747470733a2f2f7777772e66726565696d672e636e2f692f323032342f30392f31352f363665363337363139353962312e77656270"><img src="https://camo.githubusercontent.com/2cfdd4ad4ad9345df959877df0ab63aed85bfbec639503688f27a5a501ead41a/68747470733a2f2f7777772e66726565696d672e636e2f692f323032342f30392f31352f363665363337363139353962312e77656270" alt="0" data-canonical-src="https://www.freeimg.cn/i/2024/09/15/66e63761959b1.webp" style="max-width: 100%;"></a><br>
+如果显示了不可用，那很有可能是你没有把手表连接到wifi</li>
+<li>手表安装Shizuku和ShizukuRunner<br>
+装软件的教程略过，酷安上有<br>
+<a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/c7eed3fef68d212df77ca52eccd0dc966dc58e1d9553155d53f196815d533683/68747470733a2f2f7777772e66726565696d672e636e2f692f323032342f30392f31352f363665363337363137353166322e77656270"><img src="https://camo.githubusercontent.com/c7eed3fef68d212df77ca52eccd0dc966dc58e1d9553155d53f196815d533683/68747470733a2f2f7777772e66726565696d672e636e2f692f323032342f30392f31352f363665363337363137353166322e77656270" alt="Test" data-canonical-src="https://www.freeimg.cn/i/2024/09/15/66e63761751f2.webp" style="max-width: 100%;"></a><br>
+<a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/873e4233a79bd32845ddfab7fc18af8b0ae965f9a695203ddcf204a215f02287/68747470733a2f2f7777772e66726565696d672e636e2f692f323032342f30392f31352f363665363337363134323836642e77656270"><img src="https://camo.githubusercontent.com/873e4233a79bd32845ddfab7fc18af8b0ae965f9a695203ddcf204a215f02287/68747470733a2f2f7777772e66726565696d672e636e2f692f323032342f30392f31352f363665363337363134323836642e77656270" alt="Test" data-canonical-src="https://www.freeimg.cn/i/2024/09/15/66e637614286d.webp" style="max-width: 100%;"></a></li>
+<li>打开Shizuku，点击无线调试下的启动按键，等待Shizuku启动完成<br>
+<a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/18f044afba9d87d4172011e36d7b8321b28d70e18a5071ca9deff3f05d4c35ea/68747470733a2f2f7777772e66726565696d672e636e2f692f323032342f30392f31352f363665363337363138613837652e77656270"><img src="https://camo.githubusercontent.com/18f044afba9d87d4172011e36d7b8321b28d70e18a5071ca9deff3f05d4c35ea/68747470733a2f2f7777772e66726565696d672e636e2f692f323032342f30392f31352f363665363337363138613837652e77656270" alt="Test" data-canonical-src="https://www.freeimg.cn/i/2024/09/15/66e637618a87e.webp" style="max-width: 100%;"></a><br>
+启动完成后给予ShizukuRunner权限<br>
+<a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/7204a1ad9387aade6797eb8ca70643ffe7ebf066aa696dda1089da8d73589ebe/68747470733a2f2f7777772e66726565696d672e636e2f692f323032342f30392f31352f363665363337363136363066652e77656270"><img src="https://camo.githubusercontent.com/7204a1ad9387aade6797eb8ca70643ffe7ebf066aa696dda1089da8d73589ebe/68747470733a2f2f7777772e66726565696d672e636e2f692f323032342f30392f31352f363665363337363136363066652e77656270" alt="Test" data-canonical-src="https://www.freeimg.cn/i/2024/09/15/66e63761660fe.webp" style="max-width: 100%;"></a></li>
+<li>打开ShizukuRunner，点击加号新建<br>
+<a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/75f4fd432d0898478d5ef9bd621615888e8259d4a447baa8b415aaf737069ef3/68747470733a2f2f7777772e66726565696d672e636e2f692f323032342f30392f31352f363665363337363132623565342e77656270"><img src="https://camo.githubusercontent.com/75f4fd432d0898478d5ef9bd621615888e8259d4a447baa8b415aaf737069ef3/68747470733a2f2f7777772e66726565696d672e636e2f692f323032342f30392f31352f363665363337363132623565342e77656270" alt="Test" data-canonical-src="https://www.freeimg.cn/i/2024/09/15/66e637612b5e4.webp" style="max-width: 100%;"></a><br>
+名字随便取一个，然后在命令处输入wm overscan 60,60,60,60<br>
+<a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/d0005a045e5859796df60d5b7324a00f16b91cb7dd16f52a6e161e92ff35e73d/68747470733a2f2f7777772e66726565696d672e636e2f692f323032342f30392f31352f363665363337363136316163642e77656270"><img src="https://camo.githubusercontent.com/d0005a045e5859796df60d5b7324a00f16b91cb7dd16f52a6e161e92ff35e73d/68747470733a2f2f7777772e66726565696d672e636e2f692f323032342f30392f31352f363665363337363136316163642e77656270" alt="Test" data-canonical-src="https://www.freeimg.cn/i/2024/09/15/66e6376161acd.webp" style="max-width: 100%;"></a><br>
+完成后回到ShizukuRunner的主界面，点击刚刚新添加的<br>
+<a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/70d223e9dc1d44e5279f51c808617a55f1cee1250530696eedec6aa4edac55e8/68747470733a2f2f7777772e66726565696d672e636e2f692f323032342f30392f31352f363665363337363135343462302e77656270"><img src="https://camo.githubusercontent.com/70d223e9dc1d44e5279f51c808617a55f1cee1250530696eedec6aa4edac55e8/68747470733a2f2f7777772e66726565696d672e636e2f692f323032342f30392f31352f363665363337363135343462302e77656270" alt="Test" data-canonical-src="https://www.freeimg.cn/i/2024/09/15/66e63761544b0.webp" style="max-width: 100%;"></a><br>
+然后你就能享受方屏游戏了<br>
+<a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/0826057762a83e202b227fd7f8990b9c71dff4e1d428f1a50dda29dcd8bb563e/68747470733a2f2f7777772e66726565696d672e636e2f692f323032342f30392f31352f363665363337363161303230622e77656270"><img src="https://camo.githubusercontent.com/0826057762a83e202b227fd7f8990b9c71dff4e1d428f1a50dda29dcd8bb563e/68747470733a2f2f7777772e66726565696d672e636e2f692f323032342f30392f31352f363665363337363161303230622e77656270" alt="Test" data-canonical-src="https://www.freeimg.cn/i/2024/09/15/66e63761a020b.webp" style="max-width: 100%;"></a></li>
+<li>复原也很简单：再用上面的手法新建一个，命令输入wm overscan reset，再点击右边的箭头就能恢复了<br>
+<a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/d0005a045e5859796df60d5b7324a00f16b91cb7dd16f52a6e161e92ff35e73d/68747470733a2f2f7777772e66726565696d672e636e2f692f323032342f30392f31352f363665363337363136316163642e77656270"><img src="https://camo.githubusercontent.com/d0005a045e5859796df60d5b7324a00f16b91cb7dd16f52a6e161e92ff35e73d/68747470733a2f2f7777772e66726565696d672e636e2f692f323032342f30392f31352f363665363337363136316163642e77656270" alt="Test" data-canonical-src="https://www.freeimg.cn/i/2024/09/15/66e6376161acd.webp" style="max-width: 100%;"></a><br>
+<a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/3b03f839d4b9437f612953f35496bc752822c32edc4b0db7f07956783ada1d11/68747470733a2f2f7777772e66726565696d672e636e2f692f323032342f30392f31352f363665363337363139323437302e77656270"><img src="https://camo.githubusercontent.com/3b03f839d4b9437f612953f35496bc752822c32edc4b0db7f07956783ada1d11/68747470733a2f2f7777772e66726565696d672e636e2f692f323032342f30392f31352f363665363337363139323437302e77656270" alt="Test" data-canonical-src="https://www.freeimg.cn/i/2024/09/15/66e6376192470.webp" style="max-width: 100%;"></a></li>
+</ol>
+<h2>方法二：wearos工具箱</h2>
+<ol>
+<li>用前面的手法打开无线调试</li>
+<li>回到主界面，下拉控制中心，点击亮屏<br>
+（这一步的目的是防止手表自动息屏导致adb断连）<br>
+<a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/d9c5cc0f11ee4886e2a208a71fe9d60e295be915268d8ab55747e2869caf3fe3/68747470733a2f2f7777772e66726565696d672e636e2f692f323032342f30392f31352f363665363337363134643731642e77656270"><img src="https://camo.githubusercontent.com/d9c5cc0f11ee4886e2a208a71fe9d60e295be915268d8ab55747e2869caf3fe3/68747470733a2f2f7777772e66726565696d672e636e2f692f323032342f30392f31352f363665363337363134643731642e77656270" alt="Test" data-canonical-src="https://www.freeimg.cn/i/2024/09/15/66e637614d71d.webp" style="max-width: 100%;"></a><br>
+打开wearos工具箱，过向导后，在主界面最顶上的输入框输入前面开发者选项wlan调试里的ip地址（带端口），并点击连接按钮<br>
+<a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/bd0a46bd8938a750a0b33c8768e3e9414bc32685b73519eda17014c04ba78653/68747470733a2f2f7069632e696d6764622e636e2f6974656d2f3636653633613832643963333037623765396665633563332e6a7067"><img src="https://camo.githubusercontent.com/bd0a46bd8938a750a0b33c8768e3e9414bc32685b73519eda17014c04ba78653/68747470733a2f2f7069632e696d6764622e636e2f6974656d2f3636653633613832643963333037623765396665633563332e6a7067" alt="Test" data-canonical-src="https://pic.imgdb.cn/item/66e63a82d9c307b7e9fec5c3.jpg" style="max-width: 100%;"></a><br>
+<a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/9c931987954c16d8e78176958cc97840c26975a500884b890977bacb016b78bc/68747470733a2f2f7069632e696d6764622e636e2f6974656d2f3636653633613832643963333037623765396665633564372e6a7067"><img src="https://camo.githubusercontent.com/9c931987954c16d8e78176958cc97840c26975a500884b890977bacb016b78bc/68747470733a2f2f7069632e696d6764622e636e2f6974656d2f3636653633613832643963333037623765396665633564372e6a7067" alt="Test" data-canonical-src="https://pic.imgdb.cn/item/66e63a82d9c307b7e9fec5d7.jpg" style="max-width: 100%;"></a></li>
+<li>点击下面的功能，在这个页面点屏幕工具<br>
+<a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/b80e6eb70b26c5f37e331e1fd2586408d31c1a843c0fe88b22848d0a91d9320f/68747470733a2f2f7069632e696d6764622e636e2f6974656d2f3636653633613832643963333037623765396665633566642e6a7067"><img src="https://camo.githubusercontent.com/b80e6eb70b26c5f37e331e1fd2586408d31c1a843c0fe88b22848d0a91d9320f/68747470733a2f2f7069632e696d6764622e636e2f6974656d2f3636653633613832643963333037623765396665633566642e6a7067" alt="Test" data-canonical-src="https://pic.imgdb.cn/item/66e63a82d9c307b7e9fec5fd.jpg" style="max-width: 100%;"></a><br>
+在overscan值处将水平与垂直都调整为60，并应用<br>
+<a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/ca70aa1e670579edeac7585803fab1f864dda336be5bfe56640a3cbfa82a30c9/68747470733a2f2f7069632e696d6764622e636e2f6974656d2f3636653633613865643963333037623765396665636562392e6a7067"><img src="https://camo.githubusercontent.com/ca70aa1e670579edeac7585803fab1f864dda336be5bfe56640a3cbfa82a30c9/68747470733a2f2f7069632e696d6764622e636e2f6974656d2f3636653633613865643963333037623765396665636562392e6a7067" alt="Test" data-canonical-src="https://pic.imgdb.cn/item/66e63a8ed9c307b7e9feceb9.jpg" style="max-width: 100%;"></a><br>
+<a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/58eba206b0f5ff4001f72da8dbe6603e26530b82b8857756229177a816a80dbb/68747470733a2f2f7069632e696d6764622e636e2f6974656d2f3636653633613831643963333037623765396665633561382e6a7067"><img src="https://camo.githubusercontent.com/58eba206b0f5ff4001f72da8dbe6603e26530b82b8857756229177a816a80dbb/68747470733a2f2f7069632e696d6764622e636e2f6974656d2f3636653633613831643963333037623765396665633561382e6a7067" alt="Test" data-canonical-src="https://pic.imgdb.cn/item/66e63a81d9c307b7e9fec5a8.jpg" style="max-width: 100%;"></a><br>
+此时屏幕就能完整显示方形应用了<br>
+<a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/cb6c32daf0e66419b68498d84a166f757ca37bf0a917de0d5290957795eae0d7/68747470733a2f2f7777772e66726565696d672e636e2f692f323032342f30392f31352f363665363337363137666634322e77656270"><img src="https://camo.githubusercontent.com/cb6c32daf0e66419b68498d84a166f757ca37bf0a917de0d5290957795eae0d7/68747470733a2f2f7777772e66726565696d672e636e2f692f323032342f30392f31352f363665363337363137666634322e77656270" alt="Test" data-canonical-src="https://www.freeimg.cn/i/2024/09/15/66e637617ff42.webp" style="max-width: 100%;"></a><br>
+如果要恢复原来的直接点击恢复即可<br>
+<a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/b053c5414d72498ef88237ac2c79d7dac7891972c3f693b82af72f12fa2a0526/68747470733a2f2f7069632e696d6764622e636e2f6974656d2f3636653633613832643963333037623765396665633565342e6a7067"><img src="https://camo.githubusercontent.com/b053c5414d72498ef88237ac2c79d7dac7891972c3f693b82af72f12fa2a0526/68747470733a2f2f7069632e696d6764622e636e2f6974656d2f3636653633613832643963333037623765396665633565342e6a7067" alt="Test" data-canonical-src="https://pic.imgdb.cn/item/66e63a82d9c307b7e9fec5e4.jpg" style="max-width: 100%;"></a></li>
+</ol>
+<hr>
+<p>完</p></div>
+<div style="font-size:small;margin-top:8px;float:right;">转载请注明出处</div>
+
+<button class="btn btn-block" type="button" onclick="openComments()" id="cmButton">评论</button>
+<div class="comments" id="comments"></div>
+
+</div>
+    <div id="footer"><div id="footer1">Copyright © <span id="copyrightYear"></span> <a href="http://blog.mtice.top">MeltIce-Blog</a></div>
+<div id="footer2">
+    <span id="runday"></span><span>Powered by <a href="https://meekdai.com/Gmeek.html" target="_blank">Gmeek</a></span>
+</div>
+
+<script>
+var now=new Date();
+document.getElementById("copyrightYear").innerHTML=now.getFullYear();
+
+if("09/22/2024"!=""){
+    var startSite=new Date("09/22/2024");
+    var diff=now.getTime()-startSite.getTime();
+    var diffDay=Math.floor(diff/(1000*60*60*24));
+    document.getElementById("runday").innerHTML="网站运行"+diffDay+"天"+" • ";
+}
+</script></div>
+</body>
+<script>
+var IconList={'sun': 'M8 10.5a2.5 2.5 0 100-5 2.5 2.5 0 000 5zM8 12a4 4 0 100-8 4 4 0 000 8zM8 0a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0V.75A.75.75 0 018 0zm0 13a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0v-1.5A.75.75 0 018 13zM2.343 2.343a.75.75 0 011.061 0l1.06 1.061a.75.75 0 01-1.06 1.06l-1.06-1.06a.75.75 0 010-1.06zm9.193 9.193a.75.75 0 011.06 0l1.061 1.06a.75.75 0 01-1.06 1.061l-1.061-1.06a.75.75 0 010-1.061zM16 8a.75.75 0 01-.75.75h-1.5a.75.75 0 010-1.5h1.5A.75.75 0 0116 8zM3 8a.75.75 0 01-.75.75H.75a.75.75 0 010-1.5h1.5A.75.75 0 013 8zm10.657-5.657a.75.75 0 010 1.061l-1.061 1.06a.75.75 0 11-1.06-1.06l1.06-1.06a.75.75 0 011.06 0zm-9.193 9.193a.75.75 0 010 1.06l-1.06 1.061a.75.75 0 11-1.061-1.06l1.06-1.061a.75.75 0 011.061 0z', 'moon': 'M9.598 1.591a.75.75 0 01.785-.175 7 7 0 11-8.967 8.967.75.75 0 01.961-.96 5.5 5.5 0 007.046-7.046.75.75 0 01.175-.786zm1.616 1.945a7 7 0 01-7.678 7.678 5.5 5.5 0 107.678-7.678z', 'sync': 'M1.705 8.005a.75.75 0 0 1 .834.656 5.5 5.5 0 0 0 9.592 2.97l-1.204-1.204a.25.25 0 0 1 .177-.427h3.646a.25.25 0 0 1 .25.25v3.646a.25.25 0 0 1-.427.177l-1.38-1.38A7.002 7.002 0 0 1 1.05 8.84a.75.75 0 0 1 .656-.834ZM8 2.5a5.487 5.487 0 0 0-4.131 1.869l1.204 1.204A.25.25 0 0 1 4.896 6H1.25A.25.25 0 0 1 1 5.75V2.104a.25.25 0 0 1 .427-.177l1.38 1.38A7.002 7.002 0 0 1 14.95 7.16a.75.75 0 0 1-1.49.178A5.5 5.5 0 0 0 8 2.5Z', 'home': 'M6.906.664a1.749 1.749 0 0 1 2.187 0l5.25 4.2c.415.332.657.835.657 1.367v7.019A1.75 1.75 0 0 1 13.25 15h-3.5a.75.75 0 0 1-.75-.75V9H7v5.25a.75.75 0 0 1-.75.75h-3.5A1.75 1.75 0 0 1 1 13.25V6.23c0-.531.242-1.034.657-1.366l5.25-4.2Zm1.25 1.171a.25.25 0 0 0-.312 0l-5.25 4.2a.25.25 0 0 0-.094.196v7.019c0 .138.112.25.25.25H5.5V8.25a.75.75 0 0 1 .75-.75h3.5a.75.75 0 0 1 .75.75v5.25h2.75a.25.25 0 0 0 .25-.25V6.23a.25.25 0 0 0-.094-.195Z', 'github': 'M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z'};
+var utterancesLoad=0;
+
+let themeSettings={
+    "dark": ["dark","moon","#00f0ff","dark-blue"],
+    "light": ["light","sun","#ff5000","github-light"],
+    "auto": ["auto","sync","","preferred-color-scheme"]
+};
+function changeTheme(mode, icon, color, utheme){
+    document.documentElement.setAttribute("data-color-mode",mode);
+    document.getElementById("themeSwitch").setAttribute("d",value=IconList[icon]);
+    document.getElementById("themeSwitch").parentNode.style.color=color;
+    if(utterancesLoad==1){utterancesTheme(utheme);}
+}
+function modeSwitch(){
+    let currentMode=document.documentElement.getAttribute('data-color-mode');
+    let newMode = currentMode === "light" ? "dark" : currentMode === "dark" ? "auto" : "light";
+    localStorage.setItem("meek_theme", newMode);
+    if(themeSettings[newMode]){
+        changeTheme(...themeSettings[newMode]);
+    }
+}
+function utterancesTheme(theme){
+    const message={type:'set-theme',theme: theme};
+    const iframe=document.getElementsByClassName('utterances-frame')[0];
+    iframe.contentWindow.postMessage(message,'https://utteranc.es');
+}
+if(themeSettings[theme]){changeTheme(...themeSettings[theme]);}
+console.log("\n %c Gmeek last https://github.com/Meekdai/Gmeek \n","padding:5px 0;background:#02d81d;color:#fff");
+</script>
+
+<script>
+document.getElementById("pathHome").setAttribute("d",IconList["home"]);
+document.getElementById("pathIssue").setAttribute("d",IconList["github"]);
+
+
+
+function openComments(){
+    cm=document.getElementById("comments");
+    cmButton=document.getElementById("cmButton");
+    cmButton.innerHTML="loading";
+    span=document.createElement("span");
+    span.setAttribute("class","AnimatedEllipsis");
+    cmButton.appendChild(span);
+
+    script=document.createElement("script");
+    script.setAttribute("src","https://utteranc.es/client.js");
+    script.setAttribute("repo","MeltIce2024/meltice2024.github.io");
+    script.setAttribute("issue-term","title");
+    
+    if(localStorage.getItem("meek_theme")=="dark"){script.setAttribute("theme","dark-blue");}
+    else if(localStorage.getItem("meek_theme")=="light") {script.setAttribute("theme","github-light");}
+    else{script.setAttribute("theme","preferred-color-scheme");}
+    
+    script.setAttribute("crossorigin","anonymous");
+    script.setAttribute("async","");
+    cm.appendChild(script);
+
+    int=self.setInterval("iFrameLoading()",200);
+}
+
+function iFrameLoading(){
+    var utterances=document.getElementsByClassName('utterances');
+    if(utterances.length==1){
+        if(utterances[0].style.height!=""){
+            utterancesLoad=1;
+            int=window.clearInterval(int);
+            document.getElementById("cmButton").style.display="none";
+            console.log("utterances Load OK");
+        }
+    }
+}
+
+
+
+</script>
+
+
+</html>
