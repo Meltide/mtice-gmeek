@@ -12,11 +12,24 @@ document.addEventListener('DOMContentLoaded', function() {
             display: unset;
             white-space: nowrap;
             font-family: Arial;
-            margin-bottom: 35px;
         }
 
         #header {
             height: 300px;
+        }
+
+        .title-right {
+            margin-left: 50%;
+            margin-top: 500px;
+            transform: translateX(-50%);
+        }
+        
+        .labelTime {
+            display: unset;
+        }
+
+        #buttonRSS {
+            display: none;
         }
 
         #header h1 {
@@ -137,6 +150,10 @@ document.addEventListener('DOMContentLoaded', function() {
             background-color: #c9daf8;
         }
         
+        #buttonRSS {
+            display: none;
+        }
+        
         /* 标题橙色包裹 */
         .markdown-body h1{
             display: inline-block;
@@ -207,6 +224,10 @@ document.addEventListener('DOMContentLoaded', function() {
         
         .subnav-search-icon {
             top: 9px;
+        }
+        
+        #buttonRSS {
+            display: none;
         }
         
         button.btn.float-left {
