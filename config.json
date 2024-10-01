@@ -14,7 +14,7 @@
     "exlink":{"个人主页": "https://mtice.top","旧博客":"https://meltice.us.kg"},
     "bottomText":"By MeltIce.",
     "showPostSource":0,
-    "indexStyle":"<style>#header h1{position:absolute;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;margin-top:128px}.avatar{width:200px;height:200px}.title-right{margin-left:50%;margin-top:500px;transform:translateX(-50%)}#header h1 a{margin-top:30px;font-family:Arial}.blogTitle{display:block;white-space:nowrap}</style>",
+    "indexStyle":"<style>{background-image:url('https://www.freeimg.cn/i/2024/10/01/66fb52433c7ed.webp');background-repeat:no-repeat;background-attachment:fixed}#header h1{position:absolute;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;margin-top:128px}.avatar{width:200px;height:200px}.title-right{margin-left:50%;margin-top:500px;transform:translateX(-50%)}#header h1 a{margin-top:30px;font-family:Arial}.blogTitle{display:block;white-space:nowrap}</style>",
     "script":"<script src='https://blog.meekdai.com/Gmeek/plugins/lightbox.js'></script><script>document.querySelectorAll('a').forEach(anchor => {const img = anchor.querySelector('img');if (img && img.hasAttribute('data-canonical-src')) {const canonicalSrc = img.getAttribute('data-canonical-src');anchor.setAttribute('href', canonicalSrc);img.setAttribute('src', canonicalSrc);img.removeAttribute('data-canonical-src');}});</script>",
     "allHead":"<script src='https://code.buxiantang.top/assets/backtop.js'></script><script src='https://blog.meekdai.com/Gmeek/plugins/GmeekBSZ.js'></script><script src='https://blog.meekdai.com/Gmeek/plugins/GmeekVercount.js'></script>"
 }
