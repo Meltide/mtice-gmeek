@@ -20,7 +20,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
         .title-right {
             margin-left: 50%;
-            margin-top: 330px;
             transform: translateX(-50%);
         }
         
