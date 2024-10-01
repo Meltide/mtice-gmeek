@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>MeltIce-Blog</title><link>http://blog.mtice.top</link><description>一切帝国主义和反动派都是纸老虎。--毛泽东</description><copyright>MeltIce-Blog</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://q.qlogo.cn/headimg_dl?dst_uin=3480656548&amp;spec=640&amp;img_type=jpg</url><title>avatar</title><link>http://blog.mtice.top</link></image><lastBuildDate>Tue, 01 Oct 2024 06:29:25 +0000</lastBuildDate><managingEditor>MeltIce-Blog</managingEditor><ttl>60</ttl><webMaster>MeltIce-Blog</webMaster><item><title>提示框测试</title><link>http://blog.mtice.top/post/9.html</link><description>&gt; [!NOTE]&#13;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>MeltIce-Blog</title><link>http://blog.mtice.top</link><description>一切帝国主义和反动派都是纸老虎。--毛泽东</description><copyright>MeltIce-Blog</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://q.qlogo.cn/headimg_dl?dst_uin=3480656548&amp;spec=640&amp;img_type=jpg</url><title>avatar</title><link>http://blog.mtice.top</link></image><lastBuildDate>Tue, 01 Oct 2024 07:53:47 +0000</lastBuildDate><managingEditor>MeltIce-Blog</managingEditor><ttl>60</ttl><webMaster>MeltIce-Blog</webMaster><item><title>提示框测试</title><link>http://blog.mtice.top/post/9.html</link><description>&gt; [!NOTE]&#13;
 &gt; Useful information that users should know, even when skimming content.&#13;
 &#13;
 &gt; [!TIP]&#13;
@@ -156,6 +156,6 @@ pip install pythondialog&#13;
 - Telegram: [@MeltIce2947](https://t.me/MeltIce2947)&#13;
 - TG频道: [花开富贵の极品收藏夹](https://t.me/MeltProg2947)&#13;
 - TG群聊: [轮蹲大屎馆](https://t.me/MeltChat2947)&#13;
-- Github: [AMDISYES](https://github.com/AMDISYES)&#13;
+- Github: [Meltide](https://github.com/Meltide)&#13;
 - 邮箱1: [3480656548@qq.com](mailto:3480656548@qq.com)&#13;
 - 邮箱2: [amdisyes@outlook.com](mailto:amdisyes@outlook.com)。</description><guid isPermaLink="true">http://blog.mtice.top/about.html</guid><pubDate>Sun, 22 Sep 2024 09:05:43 +0000</pubDate></item><item><title>友情链接</title><link>http://blog.mtice.top/link.html</link><description>`Gmeek-html&lt;iframe id='contentFrame' src='https://mtice.top/link.html' frameborder='0' style='border: none;' width='100%'  height='204px' &gt;&lt;/iframe&gt;`。</description><guid isPermaLink="true">http://blog.mtice.top/link.html</guid><pubDate>Mon, 30 Sep 2024 13:22:04 +0000</pubDate></item></channel></rss>
