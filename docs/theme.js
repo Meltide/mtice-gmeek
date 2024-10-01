@@ -50,6 +50,10 @@ document.addEventListener('DOMContentLoaded', function() {
             margin-left: unset;
         }
         
+        #buttonRSS {
+            display: none;
+        }
+        
         /* 背景图片 */
         html {
             background: url('https://www.freeimg.cn/i/2024/10/01/66fb52433c7ed.webp') no-repeat center center fixed;
@@ -153,6 +157,10 @@ document.addEventListener('DOMContentLoaded', function() {
         html {
             background: url('https://www.freeimg.cn/i/2024/10/01/66fb52433c7ed.webp') no-repeat center center fixed;
             background-size: cover;
+        }
+        
+        #buttonRSS {
+            display: none;
         }
 
         /* 主体布局 */
@@ -264,6 +272,10 @@ document.addEventListener('DOMContentLoaded', function() {
         
         .title-right {
             align-items: flex-end;
+        }
+        
+        #buttonRSS {
+            display: none;
         }
 
         @media (max-width: 600px) {
