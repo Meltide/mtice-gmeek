@@ -8,6 +8,14 @@ document.addEventListener('DOMContentLoaded', function() {
         console.log('应用主页主题');
         let style = document.createElement("style");
         style.innerHTML = `
+        .blogTitle {
+            display: unset;
+        }
+        
+        #header {
+            height: 340px;
+        }
+        
         #header h1 {
             position: absolute;
             left: 50%;
@@ -15,7 +23,13 @@ document.addEventListener('DOMContentLoaded', function() {
             display: flex;
             flex-direction: column;
             align-items: center;
-            margin-top: 180px;
+        }
+        
+        .title-right {
+            margin: unset;
+            margin-top: 295px;
+            margin-left: 50%;
+            transform: translateX(-50%);
         }
         
         .avatar {
@@ -23,20 +37,11 @@ document.addEventListener('DOMContentLoaded', function() {
             height: 200px;
         }
         
-        .title-right {
-            margin-left: 50%;
-            margin-top: 250px;
-            transform: translateX(-50%);
-        }
-        
         #header h1 a {
             margin-top: 30px;
-            font-family:Arial;
-        }
-        
-        .blogTitle {
-            display:unset;
-            white-space:nowrap;
+            font-family: Arial;
+            font-weight: 600;
+            margin-left: unset;
         }
 
         html {    
