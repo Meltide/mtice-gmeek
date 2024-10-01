@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
             display: flex;
             flex-direction: column;
             align-items: center;
-            margin-top: 80px;
+            margin-top: 180px;
         }
         
         .avatar {
@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         .title-right {
             margin-left: 50%;
-            margin-top: 300px;
+            margin-top: 250px;
             transform: translateX(-50%);
         }
         
