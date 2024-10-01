@@ -10,6 +10,9 @@ document.addEventListener('DOMContentLoaded', function() {
         style.innerHTML = `
         .blogTitle {
             display: unset;
+            white-space: nowrap;
+            font-family: Arial;
+            margin-bottom: 35px;
         }
 
         #header {
