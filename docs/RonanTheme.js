@@ -17,23 +17,19 @@ document.addEventListener('DOMContentLoaded', function() {
             align-items: center;
             margin-top: 180px;
         }
-        
         .avatar {
             width: 200px;
             height: 200px;
         }
-        
         .title-right {
             margin-left: 50%;
             margin-top: 250px;
             transform: translateX(-50%);
         }
-        
         #header h1 a {
             margin-top: 30px;
             font-family:Arial;
         }
-        
         .blogTitle {
             display:unset;
             white-space:nowrap;
