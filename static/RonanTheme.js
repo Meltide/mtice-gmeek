@@ -80,51 +80,9 @@ document.addEventListener('DOMContentLoaded', function() {
         /* 分页条 */
         .pagination a:hover, .pagination a:focus, .pagination span:hover, .pagination span:focus, .pagination em:hover, .pagination em:focus {
             border-color: rebeccapurple;
-            
-        /* 右上角按钮 */
-        div.title-right .btn {
-            display: inline-flex;
-            align-items: center;
-            width: auto;
-            height: 40px;
-            margin: 0 3px;
-            border-radius: 2em !important;
-            transition: 0.3s;
-        }
-        
-        div.title-right .btn:hover {
-            width: auto;
-            border-radius: 2em !important;
-            background-color: #3cd2cd;
-        }
-        
-        div.title-right .btn .btndescription {
-            display: none;
-            margin-left: 3px;
-            white-space: nowrap;
-            color: black;
-            font-weight: bold;
-        }
-        
-        div.title-right .btn:hover .btndescription {
-            display: inline;
-        }
-        
         `;
         document.head.appendChild(style);}
 
-        //右上角按钮描述
-        let topright_buttons = document.querySelectorAll(".title-right a.btn");
-        
-        topright_buttons.forEach(button => {
-            var title = button.getAttribute('title');
-            if (title) {
-                var btndescription = document.createElement('span');
-                btndescription.className = 'btndescription';
-                btndescription.textContent = title;
-                button.appendChild(btndescription);
-            }
-        });
 
     //文章页主题------------------------------------------------------------------------------
     
@@ -198,52 +156,10 @@ document.addEventListener('DOMContentLoaded', function() {
             margin-right: 2px;
             margin-top: 1.8rem; 
         }   
-        
-        /* 右上角按钮 */
-        div.title-right .btn {
-            display: inline-flex;
-            align-items: center;
-            width: auto;
-            height: 40px;
-            margin: 0 3px;
-            border-radius: 2em !important;
-            transition: 0.3s;
-        }
-
-        div.title-right .btn:hover {
-            width: auto;
-            border-radius: 2em !important;
-            background-color: #3cd2cd;
-        }
-
-        div.title-right .btn .btndescription {
-            display: none;
-            margin-left: 3px;
-            white-space: nowrap;
-            color: black;
-            font-weight: bold;
-        }
-
-        div.title-right .btn:hover .btndescription {
-            display: inline;
-        }
-        
         `;
         document.head.appendChild(style);
     } 
 
-    //右上角按钮描述
-        let topright_buttons = document.querySelectorAll(".title-right a.btn");
-
-        topright_buttons.forEach(button => {
-            var title = button.getAttribute('title');
-            if (title) {
-                var btndescription = document.createElement('span');
-                btndescription.className = 'btndescription';
-                btndescription.textContent = title;
-                button.appendChild(btndescription);
-            }
-        });
 
     // 搜索页主题--------------------------------------------------------------------
     
@@ -309,51 +225,8 @@ document.addEventListener('DOMContentLoaded', function() {
             width: unset; 
             height: 36px;
         }
-        
-        /* 右上角按钮 */
-        div.title-right .btn {
-            display: inline-flex;
-            align-items: center;
-            width: auto;
-            height: 40px;
-            margin: 0 3px;
-            border-radius: 2em !important;
-            transition: 0.3s;
-        }
-        
-        div.title-right .btn:hover {
-            width: auto;
-            border-radius: 2em !important;
-            background-color: #3cd2cd;
-        }
-        
-        div.title-right .btn .btndescription {
-            display: none;
-            margin-left: 3px;
-            white-space: nowrap;
-            color: black;
-            font-weight: bold;
-        }
-        
-        div.title-right .btn:hover .btndescription {
-            display: inline;
-        }
-        
         `;
         document.head.appendChild(style);
-    
-        //右上角按钮描述
-        let topright_buttons = document.querySelectorAll(".title-right a.btn");
-        
-        topright_buttons.forEach(button => {
-            var title = button.getAttribute('title');
-            if (title) {
-                var btndescription = document.createElement('span');
-                btndescription.className = 'btndescription';
-                btndescription.textContent = title;
-                button.appendChild(btndescription);
-            }
-        });
     
         // 搜索框回车触发
         let input = document.getElementsByClassName("form-control subnav-search-input float-left")[0];
