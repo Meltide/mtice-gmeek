@@ -15,12 +15,12 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         #header {
-            height: 450px;
+            height: 380px;
         }
 
         .title-right {
             margin-left: 50%;
-            margin-top: 100px;
+            margin-top: 330px;
             transform: translateX(-50%);
         }
         
