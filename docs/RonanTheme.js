@@ -10,6 +10,9 @@ document.addEventListener('DOMContentLoaded', function() {
         style.innerHTML = `
         .blogTitle {
             display: unset;
+            white-space: nowrap;
+            font-family: Arial;
+            margin-bottom: 35px;
         }
 
         #header {
@@ -37,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         html {    
-            background: url('https://blog.freeblock.cn/background.webp') no-repeat center center fixed;
+            background: url('https://www.freeimg.cn/i/2024/10/01/66fb52433c7ed.webp') no-repeat center center fixed;
             background-size: cover;
         }
 
@@ -162,7 +165,7 @@ document.addEventListener('DOMContentLoaded', function() {
         style.innerHTML = `
         
         html {    
-            background: url('https://blog.freeblock.cn/background.webp') no-repeat center center fixed;
+            background: url('https://www.freeimg.cn/i/2024/10/01/66fb52433c7ed.webp') no-repeat center center fixed;
             background-size: cover;
         }
 
