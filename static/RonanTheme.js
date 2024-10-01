@@ -8,29 +8,6 @@ document.addEventListener('DOMContentLoaded', function() {
         console.log('应用主页主题');
         let style = document.createElement("style");
         style.innerHTML = `
-        .blogTitle {
-            display: unset;
-            white-space: nowrap;
-            font-family: Arial;
-        }
-
-        #header {
-            height: 380px;
-        }
-
-        .title-right {
-            margin-left: 50%;
-            transform: translateX(-50%);
-        }
-        
-        .labelTime {
-            display: unset;
-        }
-
-        #buttonRSS {
-            display: none;
-        }
-
         #header h1 {
             position: absolute;
             left: 50%;
@@ -38,17 +15,28 @@ document.addEventListener('DOMContentLoaded', function() {
             display: flex;
             flex-direction: column;
             align-items: center;
+            margin-top: 80px;
         }
-
+        
         .avatar {
             width: 200px;
             height: 200px;
         }
-
+        
+        .title-right {
+            margin-left: 50%;
+            margin-top: 300px;
+            transform: translateX(-50%);
+        }
+        
         #header h1 a {
             margin-top: 30px;
-            font-family: fantasy;
-            margin-left: unset;
+            font-family:Arial;
+        }
+        
+        .blogTitle {
+            display:unset;
+            white-space:nowrap;
         }
 
         html {    
@@ -68,6 +56,10 @@ document.addEventListener('DOMContentLoaded', function() {
             border-radius: 10px; /* 圆角边框 */
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* 添加阴影 */
             overflow: auto;
+        }
+
+        #buttonRSS {
+            display: none;
         }
 
         /* 主页博客列表圆角边框 */
